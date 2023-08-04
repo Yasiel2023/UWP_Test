@@ -1,0 +1,36 @@
+﻿<Page
+    x:Class="App_Test.DetailProductPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App_Test"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="489" Width="466">
+
+    <Grid Background="#FFF7F7F7" Margin="0,0,0,4">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Border BorderThickness="0.5" Background="White" BorderBrush="#FFE2DCDC" Width="194"  Height="203" Margin="10,10,262,503" Padding="5">
+            <Image Name="ImgProduct"  HorizontalAlignment="Center" Height="203" VerticalAlignment="Center" Width="194" Stretch="Uniform" Grid.Row="0"/>
+        </Border>
+        <StackPanel Margin="209,0,0,503">
+            <TextBlock Name="TextTittle" FontSize="16" Foreground="Black" Margin="0,15,38,0" TextWrapping="Wrap" Text="TextBlock" Grid.Row="0" Width="229"/>
+            <TextBlock x:Name="TextCategoria" FontSize="14" Foreground="Black" Margin="0,5,34,0" TextWrapping="Wrap" Text="TextBlock" Grid.Row="1" Width="230"/>
+            <TextBlock x:Name="TextPrecio" FontSize="14" Foreground="Black" Margin="0,5,34,0" TextWrapping="Wrap" Text="TextBlock" Grid.Row="1" Width="230"/>
+        </StackPanel>
+        <TextBlock HorizontalAlignment="Left" Text="Descripción:" Foreground="Black" Margin="10,223,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="36" Width="194"/>
+        <RichTextBlock HorizontalAlignment="Left" Height="180" Margin="10,249,0,0" VerticalAlignment="Top" Width="445" RenderTransformOrigin="0.5,0.5">
+            <RichTextBlock.RenderTransform>
+                <CompositeTransform SkewX="-0.472" TranslateX="-0.742"/>
+            </RichTextBlock.RenderTransform>
+            <Paragraph>
+                <Run Text=""  Foreground="Black" x:Name="RichDescripcion" />
+            </Paragraph>
+        </RichTextBlock>
+
+    </Grid>
+</Page>

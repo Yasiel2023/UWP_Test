@@ -1,0 +1,2 @@
+C:\Users\Yasiel\source\repos\Test-UWP\src\App\App-Test.csproj;x64
+C:\Users\Yasiel\source\repos\Test-UWP\src\Services\Services.csproj;x64

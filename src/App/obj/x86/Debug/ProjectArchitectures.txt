@@ -1,0 +1,2 @@
+C:\Users\Yasiel\source\repos\App-Test\App-Test.csproj;x86
+C:\Users\Yasiel\source\repos\Services\Services.csproj;x86
